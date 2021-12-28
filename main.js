@@ -74,6 +74,8 @@ function registerEvents() {
                 item.firstElementChild.checked = false
             }
         })
+            clearDom()
+            renderDom(leftList, rightList)
     })
 
     // Transfer All Items From Left To Right  
@@ -104,6 +106,8 @@ function registerEvents() {
                 item.firstElementChild.checked = false
             }
         })
+            clearDom()
+            renderDom(leftList, rightList)
     })
     // Transfer All Items From Right to Left
     allToLeftButton.addEventListener('click', (e) => {
